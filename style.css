@@ -77,18 +77,21 @@ header{
     margin-top: 30px;
 }
 
-.amount-box h3{
+.amount-box li{
     padding: 2%;
-    background-color: coral;
+    background-color: blueviolet;
     margin: 2%;
     color: black;
     font-weight: 700;
+    list-style: none;
+    border: 1px  solid black;
+    box-shadow: 5px -5px 10px skyblue;
 }
 
 #selected-amount{
-    border: 1px solid greenyellow;
+    border: 1px solid blueviolet;
     background-color: black;
-    color: coral;
+    color: blueviolet;
 }
 
 .donate-now input{
@@ -117,13 +120,32 @@ header{
     justify-content: space-evenly;
 }
 
-.plan-box{
+#plan-box1{
     background-color: coral;
     width: 30%;
     padding: 2%;
     margin: 2%;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px greenyellow;
+    border-left: 3px solid blue;
+    box-shadow: 5px 5px 10px red;
+}
+#plan-box2 {
+    background-color: rgb(26, 219, 196);
+    width: 30%;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 20px;
+    border-left: 3px solid yellow;
+    box-shadow: 5px 5px 10px white;
+}
+#plan-box3 {
+    background-color: rgb(109, 33, 196);
+    width: 30%;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 20px;
+    border-left: 3px solid mediumseagreen;
+    box-shadow: 5px 5px 10px yellow;
 }
 
 /* how we works/bonus section */
@@ -152,6 +174,11 @@ header{
     width: 50%;
     padding: 2%;
 }
+
+.half-width img{
+    width: 100%;
+    border-radius: 20px;
+}
 .non-profit-content{
     border-left: 5px solid yellow;
 }
@@ -159,7 +186,28 @@ header{
     width: 100%;
     border-radius: 30px;
 }
+/* Donation count /bonus section */
 
+.donation-count{
+    margin-top: 70px;
+    margin-left: 10%;
+    width: 80%;
+    height: 200px;
+    background-color: rgb(50, 169, 205);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    box-shadow: 10px 10px 20px white;
+    border-radius: 10px;
+}
+
+.count-item{
+    padding: 5%;
+    text-align: center;
+    border-radius: 30px;
+    margin: 3%;
+    
+}
 /* subscribe section */
 
 .subscribe-us{
@@ -174,8 +222,10 @@ header{
 .subscribe-us input{
     width: 60%;
     height: 20px;
-    background-color: orange;
+    background-color: rgb(186, 176, 192);
     padding: 2px 10px;
+    box-shadow: 2px 2px 10px black;
+    border: none;
     
 }
 .email-box{
@@ -196,6 +246,7 @@ header{
     padding: 5px 20px;
     color: white;
     font-size: 14px;
+    
 }
 
 /* footer */
@@ -203,22 +254,30 @@ header{
 footer{
     text-align: center;
     width: 100%;
-    height: 100px;
-    background-color: white;
-    background-image: url(images/top-banner.png);
+    height: 130px;
+    background-color: black;
+    background-image: url(images/footer-background.png) ;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 70px;
+    margin-top: 90px;
+    border-top: 2px double hotpink;
+    
 }
 
 footer h3{
     font-size: 30px;
     color: rgb(61, 138, 206);
-    padding-top: 20px;
+    padding-top: 40px;
+}
+
+footer h3 span{
+    color: aquamarine;
 }
 
 footer p{
     font-size: 16;
+    color: white;
+    font-weight: 200;
     
 }
 
